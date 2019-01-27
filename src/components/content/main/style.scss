@@ -1,36 +1,83 @@
+@import '../../../App.scss';
+
+@mixin responsive-lg {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.article-main {
+    position: relative;
+    width: 100%;
+
+    @include lg {
+        @include responsive-lg;
+    }
+}
+
 .image-main-parent {
     width: 100%;
+    
+    @include lg {
+        @include responsive-lg;
+    }
 }
 
 .image-main {
-    display: block;
     width: 100%;
-    height: auto;
+    height: 600px;
+    object-fit: cover;
+
+    @include md {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    @include lg {
+        @include responsive-lg;
+    }
 }
 
 .wrap-main {
     position: absolute;
-    bottom: 130px;
-    left: 150px;
-    right: 50px;
+    bottom: 12vw;
+    left: 14vw;
+    right: 10vw;
 }
 
 .tag-main {
     font-weight: bold;
     color: white;
-    font-size: 1.8vw;
+    font-size: 3.6vw;
+
+    @include md {
+        font-size: 1.6vw;
+    }
 }
 
 .title-main {
-    margin: 0;
-    padding: 5px 0;
+    padding: 5px 0px;
+    margin: 0px;
     font-weight: 300;
     color: white;
-    font-size: 4.5vw;
+    line-height: 8.6vw;
+    font-size: 8.6vw;
+
+    @include md {
+        line-height: 4.6vw;
+        font-size: 4.6vw;
+    }
 }
 
 .by-main {
     font-weight: 300;
     color: white;
-    font-size: 1.8vw;
+    font-size: 3.6vw;
+
+    @include md {
+        font-size: 1.6vw;
+    }
 }

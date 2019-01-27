@@ -2,9 +2,14 @@
 
 .search-bar-on {
     margin-right: 30px; 
-    margin-left: 30px; 
+    margin-left: 30px;  
+    margin-bottom: 15px;
     width: 100%;
     position: relative;
+
+    @include md {
+        margin-bottom: 0;
+    }
 }
 
 .search-bar-on input {
@@ -48,10 +53,14 @@
 
 .search-bar-off {
     width: 36px;
-    margin-right: 30px; 
+
+    @include md {
+        margin-right: 40px;
+    } 
 }
 
 .search-bar-off img {
+
     width: 36px;
     cursor: pointer;
     transition: width 0.2s;

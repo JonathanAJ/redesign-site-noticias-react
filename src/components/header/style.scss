@@ -10,10 +10,10 @@
 
 .header-top {
     @include background-dark;
-    height: 113px;
+    // min-height: 113px;
 }
 
 .header-bottom {
     background-color: $primary;
-    height: 58px;
+    min-height: 58px;
 }

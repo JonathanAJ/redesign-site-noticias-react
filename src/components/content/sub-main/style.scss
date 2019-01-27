@@ -1,0 +1,24 @@
+@import '../../../App.scss';
+
+.sub-main-wrap {
+    position: absolute;
+    margin: 0;
+    z-index: 100000;
+
+    @include md {
+        margin-top: -80px;
+    }
+
+    @include lg {
+        margin-top: -100px;
+    }
+
+    @include xl {
+        margin-top: -110px;
+    }
+}
+
+.sub-main-card {
+    padding-bottom: 10px;
+    margin: 0;
+}

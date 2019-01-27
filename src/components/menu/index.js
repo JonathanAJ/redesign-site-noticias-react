@@ -8,12 +8,10 @@ export default class Menu extends Component {
       <nav className="main-menu">
         <ul>
             <li><a className="main-menu-active" href="#">HOME</a></li>
-            <li><a href="#">POLICIAL</a></li>
-            <li><a href="#">POLÍTICA</a></li>
-            <li><a href="#">COMÉRCIO</a></li>
-            <li><a href="#">CULTURA</a></li>
-            <li><a href="#">ESPORTE</a></li>
-            <li><a href="#">CIDADANIA</a></li>
+            <li><a href="#">EDITORIAL</a></li>
+            <li><a href="#">COLUNISTAS</a></li>
+            <li><a href="#">CLASSIFICADOS</a></li>
+            <li><a href="#">SOBRE</a></li>
         </ul>
       </nav>
     )
