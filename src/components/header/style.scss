@@ -1,0 +1,19 @@
+@import "../../App.scss";
+
+@mixin background-dark {
+    background-color: $primary-dark;
+}
+
+.background-dark {
+    @include background-dark;
+}
+
+.header-top {
+    @include background-dark;
+    height: 113px;
+}
+
+.header-bottom {
+    background-color: $primary;
+    height: 58px;
+}

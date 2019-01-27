@@ -1,21 +1,43 @@
 import React, { Component } from 'react'
-import { Row } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 
-import './style.css';
+import './style.scss';
 import Menu from '../menu';
 import SearchBar from '../search';
+import ContentMain from '../content/main';
 
 export default class Header extends Component {
   render() {
     return (
-      <div>
-        <Row className="header-top">
-          <SearchBar />
+      // <Col>
+        <Row className="header-top" middle="xs">
+
+          <Col xs={12} md={4}>
+            {/* Algo */}
+          </Col>
+
+          <Col xs={12} md={4}>
+            <Row center="xs">
+              <img onClick={this.toggleSearch} src={require("../../img/icons/logo.png")} />
+            </Row>
+          </Col>
+          
+          <Col className="background-dark" xs={12} md={4}>
+            <Row center="xs" end="md">
+              <SearchBar />
+            </Row>
+          </Col>
+          
+          <Col className="header-bottom" xs={12} md={12}>
+            <Row center="xs" middle="xs">
+              <Menu />
+            </Row>
+          </Col>
+
+          <ContentMain />
+
         </Row>
-        <Row center="xs" middle="xs" className="header-bottom">
-          <Menu />
-        </Row>
-      </div>
+      // </Col>
     )
   }
 }

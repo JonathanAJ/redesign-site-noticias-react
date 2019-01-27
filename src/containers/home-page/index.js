@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Grid } from 'react-flexbox-grid';
+import { Grid, Col, Row } from 'react-flexbox-grid';
 
 import Header from '../../components/header';
 
-import './style.css';
+import './style.scss';
 
 export default class HomePage extends React.Component {
 

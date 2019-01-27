@@ -1,19 +1,22 @@
 import React, { Component } from 'react'
 
-import './style.css';
+import './style.scss';
 
 export default class SearchBar extends Component {
 
     constructor(){
         super();
         this.state = {
-            isSearch: true
+            isSearch: false
         };
     }
 
     toggleSearch = (e) => {
         e.preventDefault();
         console.log('click', this.state)
+        this.setState({
+            isSearch: !this.state.isSearch
+        })
     }
 
     render() {

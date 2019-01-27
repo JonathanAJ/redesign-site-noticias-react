@@ -19,11 +19,18 @@
     transition: border 0.3s ease-in, font-weight 0.3s ease-in;
 }
 
+@mixin item-active {
+    font-weight: bold !important;
+    border-bottom-color: white !important;
+    border-bottom-width: 1.5px !important;
+    border-bottom-style: solid !important;
+    transition: border 0.3s ease-out, font-weight 0.3s ease-out !important;
+}
+
+.main-menu-active {
+    @include item-active();
+}
+
 .main-menu li a:hover {
-    color: #fff;
-    font-weight: bold;
-    border-bottom-color: white;
-    border-bottom-width: 1.5px;
-    border-bottom-style: solid;
-    transition: border 0.3s ease-out, font-weight 0.3s ease-out;
+    @include item-active();
 }

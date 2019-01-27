@@ -1,0 +1,64 @@
+@import "../../App.scss";
+
+.search-bar-on {
+    margin-right: 30px; 
+    margin-left: 30px; 
+    width: 100%;
+    position: relative;
+}
+
+.search-bar-on input {
+    background-color: white;
+    border: none;
+    height: 44px;
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding-left: 16px;
+}
+
+.search-bar-on button {
+    position: absolute;
+    top: 0;
+    right: -16px;
+    background-color: $background;
+    height: 46px;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transition: background-color 0.3s;
+}
+
+.search-bar-on button:hover {
+    background-color: $primary;
+    transition: background-color 0.3s;
+}
+
+.search-bar-on button:active {
+    background-color: $background;
+}
+
+.search-bar-on img {
+    width: 36px;
+    cursor: pointer;
+}
+
+.search-bar-off {
+    width: 36px;
+    margin-right: 30px; 
+}
+
+.search-bar-off img {
+    width: 36px;
+    cursor: pointer;
+    transition: width 0.2s;
+}
+
+.search-bar-off img:hover {
+    width: 46px;
+    cursor: pointer;
+    transition: width 0.2s;
+}
