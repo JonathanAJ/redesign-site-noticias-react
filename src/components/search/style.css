@@ -1,0 +1,30 @@
+.search-bar-on input {
+    background-color: white;
+    border: none;
+    height: 54px;
+    width: 300px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding-left: 16px;
+}
+
+.search-bar-on button {
+    background-color: #ccc;
+    float: right;
+    padding: 10px 20px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.search-bar-on img {
+    width: 36px;
+    cursor: pointer;
+}
+
+.search-bar-off img {
+    width: 36px;
+    cursor: pointer;
+}
