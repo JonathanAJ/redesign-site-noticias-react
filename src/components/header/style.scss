@@ -10,7 +10,9 @@
 
 .header-top {
     @include background-dark;
-    // min-height: 113px;
+    // Google shadow
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+    z-index: 99999999;
 }
 
 .header-bottom {

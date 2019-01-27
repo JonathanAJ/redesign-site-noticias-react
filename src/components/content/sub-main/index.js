@@ -9,7 +9,7 @@ export default class ContentSubMain extends Component {
     return (
       <Row xs={12} className="sub-main-wrap">
         <Col xs={12} sm={6} lg={3} className="sub-main-card">
-          <Card />
+          <Card  />
         </Col>
         <Col xs={12} sm={6} lg={3} className="sub-main-card">        
           <Card />

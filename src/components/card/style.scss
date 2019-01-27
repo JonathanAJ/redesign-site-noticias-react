@@ -1,10 +1,9 @@
 @import '../../App.scss';
 
-.card-default {
+@mixin card {
     width: 100%;
     min-height: 150px;
     background-color: white;
-    border-radius: 5px;
     cursor: pointer;
     padding-bottom: 15px;
 
@@ -14,12 +13,12 @@
     border-radius: 2px;
 }
 
-.card-default:hover {
+@mixin card-hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: box-shadow .25s, -webkit-box-shadow .25s;
 }
 
-.card-default h2 {
+@mixin card-h2 {
     font-size: 14px;
     color: $primary;
     font-weight: 500;
@@ -27,16 +26,66 @@
     padding: 15px 0 0 0;
 }
 
-.card-default p {
+@mixin card-p {
     font-size: 22px;
     font-weight: 300;
     margin: 5px 15px;
     padding: 0;
 }
 
-.card-default span {
+@mixin card-span {
     font-size: 10px;
     font-weight: 300;
     margin: 10px 15px;
     padding: 0;
+}
+
+.card-default {
+    @include card;
+}
+
+.card-default:hover {
+    @include card-hover;
+}
+
+.card-default h2 {
+    @include card-h2;
+}
+
+.card-default p {
+    @include card-p;
+}
+
+.card-default span {
+    @include card-span;
+}
+
+.card-image {
+    @include card;
+}
+
+.card-image:hover {
+    @include card-hover;
+}
+
+.card-image img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.card-image h2 {
+    @include card-h2;
+    font-size: 18px;
+}
+
+.card-image p {
+    @include card-p;
+    font-size: 26px;
+}
+
+.card-image span {
+    @include card-span;
+    font-size: 12px;
 }

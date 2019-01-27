@@ -7,6 +7,9 @@ import Header from '../../components/header';
 import './style.scss';
 import ContentMain from '../../components/content/main';
 import ContentSubMain from '../../components/content/sub-main';
+import ContentCurrent from '../../components/content/current';
+import ContentPopular from '../../components/content/popular';
+import Divider from '../../components/divider';
 
 export default class HomePage extends React.Component {
 
@@ -14,10 +17,20 @@ export default class HomePage extends React.Component {
         return (
           <Grid fluid className="app-home">
             <Header />
+
             <ContentMain />
             <ContentSubMain />
+
+            <Divider name="Notícias atuais" />
+            <ContentCurrent />
+
+            <Divider name="Notícias populares" />
+            <ContentPopular />
+
+            <Divider name="Redes sociais" />
+            <ContentPopular />
+            
           </Grid>
         );
     };
-
 }

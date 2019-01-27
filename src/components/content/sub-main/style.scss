@@ -1,12 +1,13 @@
 @import '../../../App.scss';
 
 .sub-main-wrap {
-    position: absolute;
-    margin: 0;
+    position: relative;
     z-index: 100000;
 
     @include md {
         margin-top: -80px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     @include lg {

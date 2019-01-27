@@ -1,0 +1,36 @@
+
+@mixin divider-style {
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: #000;
+    line-height: 0;
+}
+
+.divider {
+    margin: 50px 50px 45px 50px;
+}
+
+.divider-section {
+    @include divider-style();
+    float: left;
+}
+
+.divider-link {
+    @include divider-style();
+    padding-bottom: 30px;
+    float: right;
+    text-decoration: underline dotted #000
+}
+
+.divider-link:hover {
+    font-weight: 500;
+}
+
+.divider-line {
+    border-top: .25px solid #ccc;
+    margin-left: 150px;
+    margin-right: 100px;
+}
