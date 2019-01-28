@@ -88,6 +88,12 @@
     @include card-p;
     margin: 10px 0px;
     font-size: 26px;
+    transition: color .2s ease-in;
+}
+
+.card-image p:hover {
+    color: $primary-dark;
+    transition: color .2s ease-out;
 }
 
 .card-image span {

@@ -10,6 +10,9 @@ import ContentSubMain from '../../components/content/sub-main';
 import ContentCurrent from '../../components/content/current';
 import ContentPopular from '../../components/content/popular';
 import Divider from '../../components/divider';
+import ContentPopularSecond from '../../components/content/popular-second';
+import ContentNetwork from '../../components/content/network';
+import Menu from '../../components/menu';
 
 export default class HomePage extends React.Component {
 
@@ -24,11 +27,19 @@ export default class HomePage extends React.Component {
             <Divider name="Notícias atuais" />
             <ContentCurrent />
 
-            <Divider name="Os Populares" />
+            <Divider name="Notícias Pop" />
             <ContentPopular />
 
+            <Divider name="Notícias Pop" />
+            <ContentPopularSecond />
+
             <Divider name="Redes sociais" />
-            <ContentPopular />
+            <ContentNetwork />
+
+            <Divider basic />
+            <Row center="xs" middle="xs">
+              <Menu inverted />
+            </Row>
             
           </Grid>
         );

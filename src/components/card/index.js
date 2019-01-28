@@ -37,7 +37,7 @@ const CardDefault = (props) => {
           {props.txt}
       </p>
       <span>
-          Por Jonathan Alves
+        {props.txt ? 'Por Jonathan Alves': ''}
       </span>
     </div>
   )
@@ -57,7 +57,7 @@ const CardImage = (props) => {
           {props.txt}
       </p>
       <span>
-          Por Jonathan Alves
+        {props.txt ? 'Por Jonathan Alves': ''}
       </span>
     </div>
   )

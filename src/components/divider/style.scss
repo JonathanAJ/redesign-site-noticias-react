@@ -9,8 +9,12 @@
     line-height: 0;
 }
 
-.divider {
+.divider-wrap {
     margin: 50px 50px 45px 50px;
+}
+
+.divider-basic-wrap {
+    margin: 50px 50px 10px 50px;
 }
 
 .divider-section {
@@ -27,6 +31,10 @@
 
 .divider-link:hover {
     font-weight: 500;
+}
+
+.divider-basic {
+    border-top: .25px solid #ccc;
 }
 
 .divider-line {

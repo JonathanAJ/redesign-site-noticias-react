@@ -29,7 +29,7 @@ export default class ContentCurrent extends Component {
   render() {
     return (
       <Row xs={12} className="current-wrap">
-        <Col xs={12} lg={8} className="current-card">
+        <Col xs={12} lg={8} className="current-main">
           <Card  {...this.content.one} />
         </Col>
         <Col xs={12} lg={4} className="current-card">

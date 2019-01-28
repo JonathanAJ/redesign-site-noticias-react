@@ -30,7 +30,7 @@ export default class Header extends Component {
 
           <Col className="header-bottom" xs={12} md={12}>
             <Row center="xs" middle="xs">
-              <Menu />
+              <Menu main />
             </Row>
           </Col>
           

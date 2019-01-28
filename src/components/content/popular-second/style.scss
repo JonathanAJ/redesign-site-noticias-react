@@ -1,0 +1,111 @@
+@import '../../../App.scss';
+
+.popular-second {
+
+    img.perfil-main {
+        border-radius: 100%;
+        position: absolute;
+        object-fit: cover;
+    
+        width: 10vw;
+        height: 10vw;
+        bottom: 65vw;
+        left: 10vw;
+    
+        @include md {
+            width: 7vw;
+            height: 7vw;
+            bottom: 120px;
+            left: 54px;
+        }
+    }
+    
+    @mixin responsive-lg {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .article-main {
+        position: relative;
+        width: 100%;
+        border-radius: 2px;
+    
+        @include lg {
+            @include responsive-lg;
+        }
+    }
+    
+    .image-main-parent {
+        width: 100%;
+        
+        @include lg {
+            @include responsive-lg;
+        }
+    }
+    
+    .image-main {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 2px;
+    
+        @include md {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        @include lg {
+            @include responsive-lg;
+        }
+    }
+    
+    .wrap-main {
+        position: absolute;
+        bottom: 12vw;
+        left: 10vw;
+        right: 5vw;
+    
+        @include md {
+            left: 16vw;
+            right: 10vw;
+            bottom: 70px;
+        }
+    }
+    
+    .tag-main {
+        font-weight: bold;
+        color: white;
+        font-size: 3.6vw;
+    
+        @include md {
+            font-size: 1.6vw;
+        }
+    }
+    
+    .title-main {
+        margin: 15px 0px 20px -3px;
+        font-weight: 300;
+        color: white;
+        line-height: 8.6vw;
+        font-size: 8.6vw;
+    
+        @include md {
+            line-height: 46px;
+            font-size: 46px;
+        }
+    }
+    
+    .by-main {
+        font-weight: 300;
+        color: white;
+        font-size: 3.6vw;
+    
+        @include md {
+            font-size: 1.6vw;
+        }
+    }
+}
