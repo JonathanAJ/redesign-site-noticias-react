@@ -9,9 +9,21 @@ export default class ContentPopular extends Component {
   content = {
     one: {
       type: 'image',
-      img: require('../../../img/photos/3.png'),
-      tag: "fevereiro",
-      txt: "Requalificação do Polo da Varjota deve começar"
+      img: require('../../../img/photos/agua.jpeg'),
+      tag: "Capital e RMF",
+      txt: "Distribuição de água será dividida em microssetores"
+    },
+    two: {
+      type: 'image',
+      img: require('../../../img/photos/futebol.jpeg'),
+      tag: "Campeonato cearense",
+      txt: "Ferroviário vence Floresta, mas perde vaga na Copa do Brasil"
+    },
+    three: {
+      type: 'image',
+      img: require('../../../img/photos/enel.jpeg'),
+      tag: "Ataques no CE",
+      txt: "Caminhão da Enel é incendiado no bairro Canindezinho"
     }
   }
 
@@ -22,10 +34,10 @@ export default class ContentPopular extends Component {
           <Card {...this.content.one}/>
         </Col>
         <Col xs={12} sm={4}>
-          <Card {...this.content.one}/>
+          <Card {...this.content.two}/>
         </Col>
         <Col xs={12} sm={4}>
-          <Card {...this.content.one}/>
+          <Card {...this.content.three}/>
         </Col>
       </Row>
     )

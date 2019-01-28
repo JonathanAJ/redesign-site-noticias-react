@@ -6,15 +6,10 @@
     background-color: white;
     cursor: pointer;
     padding-bottom: 15px;
-
-    // Google shadow
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    transition: box-shadow .25s, -webkit-box-shadow .25s;
-    border-radius: 2px;
 }
 
 @mixin card-hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    @include shadow;
     transition: box-shadow .25s, -webkit-box-shadow .25s;
 }
 
@@ -57,6 +52,11 @@
     @include card-p;
 }
 
+.card-default p:hover {
+    color: $primary-dark;
+    transition: color .2s ease-out;
+}
+
 .card-default span {
     @include card-span;
 }
@@ -68,7 +68,7 @@
 
 .card-image:hover {
     @include card-hover;
-    box-shadow: none;
+    @include shadow;
 }
 
 .card-image img {
@@ -80,13 +80,13 @@
 
 .card-image h2 {
     @include card-h2;
-    margin: 10px 0px;
+    margin: 10px 15px;
     font-size: 18px;
 }
 
 .card-image p {
     @include card-p;
-    margin: 10px 0px;
+    margin: 10px 15px;
     font-size: 26px;
     transition: color .2s ease-in;
 }
@@ -98,6 +98,24 @@
 
 .card-image span {
     @include card-span;
-    margin: 10px 0px;
+    margin: 10px 15px;
     font-size: 12px;
+}
+
+.card-basic {
+    @include card;
+    transition: color .2s ease-out, background-color .1s ease-out;
+}
+
+.card-basic:hover {
+    background-color: $primary;
+    color: white;
+    transition: color .2s ease-in, background-color .1s ease-in;
+}
+
+.card-basic p {
+    @include card-p;
+    text-align: center;
+    line-height: 140px;
+    font-size: 26px;
 }

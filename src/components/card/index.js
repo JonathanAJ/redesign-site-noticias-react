@@ -7,7 +7,7 @@ export default class Card extends Component {
   
   static propTypes = {
     prop: PropTypes,
-    type: PropTypes.oneOf('default', 'image').isRequired,
+    type: PropTypes.oneOf('default', 'image', 'basic').isRequired,
     img: PropTypes.object,
     tag: PropTypes.string.isRequired,
     txt: PropTypes.string.isRequired
@@ -23,6 +23,8 @@ export default class Card extends Component {
         return <CardDefault tag={this.props.tag} txt={this.props.txt} />;
       case 'image':
         return <CardImage img={this.props.img} tag={this.props.tag} txt={this.props.txt} />
+      case 'basic':
+        return <CardBasic txt={this.props.txt} />
     }
   }
 }
@@ -59,6 +61,16 @@ const CardImage = (props) => {
       <span>
         {props.txt ? 'Por Jonathan Alves': ''}
       </span>
+    </div>
+  )
+}
+
+const CardBasic = (props) => {
+  return(
+    <div className="card-basic">
+      <p>
+          {props.txt}
+      </p>
     </div>
   )
 }

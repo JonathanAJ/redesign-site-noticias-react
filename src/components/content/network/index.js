@@ -7,9 +7,20 @@ export default class ContentNetwork extends Component {
 
   content = {
     one: {
-      type: 'default',
-      // tag: "instagram",
-      // txt: ""
+      type: 'basic',
+      txt: "Facebook"
+    },
+    two: {
+      type: 'basic',
+      txt: "Instagram"
+    },
+    three: {
+      type: 'basic',
+      txt: "Twitter"
+    },
+    four: {
+      type: 'basic',
+      txt: "Youtube"
     }
   }
 
@@ -20,13 +31,13 @@ export default class ContentNetwork extends Component {
           <Card {...this.content.one}/>
         </Col>
         <Col xs={6} sm={3}>
-          <Card {...this.content.one}/>
+          <Card {...this.content.two}/>
         </Col>
         <Col xs={6} sm={3}>
-          <Card {...this.content.one}/>
+          <Card {...this.content.three}/>
         </Col>
         <Col xs={6} sm={3}>
-          <Card {...this.content.one}/>
+          <Card {...this.content.four}/>
         </Col>
       </Row>
     )

@@ -39,6 +39,10 @@
         }
     }
     
+    .article-main:hover {
+        @include shadow;
+    }
+    
     .image-main-parent {
         width: 100%;
         
@@ -92,6 +96,7 @@
         color: white;
         line-height: 8.6vw;
         font-size: 8.6vw;
+        cursor: pointer;
     
         @include md {
             line-height: 46px;

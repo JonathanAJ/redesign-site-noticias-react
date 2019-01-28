@@ -92,11 +92,16 @@ img.perfil-main {
     color: white;
     line-height: 8.6vw;
     font-size: 8.6vw;
+    cursor: pointer;
 
     @include md {
         line-height: 4.6vw;
         font-size: 4.6vw;
     }
+}
+
+.title-main:hover {
+    text-decoration: underline;
 }
 
 .by-main {
