@@ -24,6 +24,7 @@
     font-weight: 500;
     margin: 10px 15px;
     padding: 15px 0 0 0;
+    text-transform: uppercase;
 }
 
 @mixin card-p {
@@ -62,30 +63,35 @@
 
 .card-image {
     @include card;
+    box-shadow: none;
 }
 
 .card-image:hover {
     @include card-hover;
+    box-shadow: none;
 }
 
 .card-image img {
     width: 100%;
+    min-height: 150px;
     object-fit: cover;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+    border-radius: 2px;
 }
 
 .card-image h2 {
     @include card-h2;
+    margin: 10px 0px;
     font-size: 18px;
 }
 
 .card-image p {
     @include card-p;
+    margin: 10px 0px;
     font-size: 26px;
 }
 
 .card-image span {
     @include card-span;
+    margin: 10px 0px;
     font-size: 12px;
 }

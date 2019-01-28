@@ -11,6 +11,9 @@ export default class ContentMain extends Component {
                 <div class="image-main-parent">
                     <img className="image-main" src={require("../../../img/photos/1.png")} />
                 </div>
+                
+                <img className="perfil-main " src={require('../../../img/photos/eu.jpeg')} />
+                
                 <div className="wrap-main">
                     <span className="tag-main">
                         BRUMADINHO

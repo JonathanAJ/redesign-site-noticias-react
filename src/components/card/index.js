@@ -6,7 +6,11 @@ import './style.scss'
 export default class Card extends Component {
   
   static propTypes = {
-    prop: PropTypes
+    prop: PropTypes,
+    type: PropTypes.oneOf('default', 'image').isRequired,
+    img: PropTypes.object,
+    tag: PropTypes.string.isRequired,
+    txt: PropTypes.string.isRequired
   }
 
   static defaultProps = {
@@ -16,25 +20,21 @@ export default class Card extends Component {
   render() {
     switch(this.props.type) {
       case 'default':
-        return <CardDefault />;
+        return <CardDefault tag={this.props.tag} txt={this.props.txt} />;
       case 'image':
-        return <CardImage />
+        return <CardImage img={this.props.img} tag={this.props.tag} txt={this.props.txt} />
     }
   }
 }
 
-Card.propTypes = {
-  type: PropTypes.oneOf('default', 'image').isRequired,
-};
-
-const CardDefault = () => {
+const CardDefault = (props) => {
   return(
     <div className="card-default">
       <h2>
-          AV. PONTES VIEIRA
+          {props.tag}
       </h2>
       <p>
-          Mercado das Flores é aberto com 39 lojas e preços baixos
+          {props.txt}
       </p>
       <span>
           Por Jonathan Alves
@@ -43,15 +43,18 @@ const CardDefault = () => {
   )
 }
 
-const CardImage = () => {
+const CardImage = (props) => {
+  
+  const img = props.img ?  <img src={props.img} /> : null;
+  
   return(
     <div className="card-image">
-      <img src={require('../../img/photos/1.png')} />
+      { img }
       <h2>
-          AV. PONTES VIEIRA
+          {props.tag}
       </h2>
       <p>
-          Mercado das Flores é aberto com 39 lojas e preços baixos
+          {props.txt}
       </p>
       <span>
           Por Jonathan Alves

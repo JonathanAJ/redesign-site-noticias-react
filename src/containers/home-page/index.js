@@ -24,7 +24,7 @@ export default class HomePage extends React.Component {
             <Divider name="Notícias atuais" />
             <ContentCurrent />
 
-            <Divider name="Notícias populares" />
+            <Divider name="Os Populares" />
             <ContentPopular />
 
             <Divider name="Redes sociais" />

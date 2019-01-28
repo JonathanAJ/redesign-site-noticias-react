@@ -1,5 +1,23 @@
 @import '../../../App.scss';
 
+img.perfil-main {
+    border-radius: 100%;
+    position: absolute;
+    object-fit: cover;
+
+    width: 10vw;
+    height: 10vw;
+    bottom: 65vw;
+    left: 10vw;
+
+    @include md {
+        width: 7vw;
+        height: 7vw;
+        bottom: 16vw;
+        left: 54px;
+    }
+}
+
 @mixin responsive-lg {
     width: 100%;
     box-sizing: border-box;
@@ -44,8 +62,18 @@
 .wrap-main {
     position: absolute;
     bottom: 12vw;
-    left: 14vw;
-    right: 10vw;
+    left: 10vw;
+    right: 5vw;
+
+    @include md {
+        left: 16vw;
+        right: 10vw;
+    }
+
+    @include lg {
+        left: 14vw;
+        right: 10vw;
+    }
 }
 
 .tag-main {
@@ -59,8 +87,7 @@
 }
 
 .title-main {
-    padding: 5px 0px;
-    margin: 0px;
+    margin: 15px 0px 20px -3px;
     font-weight: 300;
     color: white;
     line-height: 8.6vw;
