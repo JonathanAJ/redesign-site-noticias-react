@@ -4,6 +4,8 @@ https://redesign-site-noticias-react.herokuapp.com
 
 Obs: Você pode testar o site facilmente usando o link acima com deploy no Heroku. Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app). O projeto é uma proposta de *redesign* do site de notícias cearense **Diário do Nordeste**.
 
+![alt text](src/img/image.png "Preview")
+
 ## Available Scripts
 
 In the project directory, you can run:
